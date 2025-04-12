@@ -1,0 +1,26 @@
+# --- Virtual envs ---
+hack_env/
+luddy/
+PathWise-master/backend/venv/
+
+# --- Python caches & builds ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+build/
+dist/
+*.egg-info/
+
+# --- Node.js ---
+node_modules/
+frontend-react/node_modules/
+
+# --- IDEs / OS files ---
+.idea/
+.DS_Store
+
+# --- Logs, env files, misc ---
+*.log
+.env
+EOF

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+openai
+pandas
+matplotlib
+networkx
+lancedb
+langchain>=0.0.142
+langchain-community
+langchain-openai
+langchain-core
+langgraph
