@@ -126,7 +126,7 @@ Verify that the FastAPI server is running and available at http://localhost:8000
 Check that the endpoint paths in your React app (e.g., in ChatBot.js) match your backend endpoints.
 Ensure CORS is properly configured on the backend to allow your React app to communicate.
 ### Console Errors:
-Open your browser’s console (F12) and check for any JavaScript errors.
+Open your browser’s console and check for any JavaScript errors.
 Verify that all context values are properly imported and used.
 ### Environment Variables:
-Make sure all required API keys (such as OPENAI_API_KEY) are set either in your .env file or as system environment variables.
+Make sure all required API keys are set either in your .env file or as system environment variables.
