@@ -80,7 +80,7 @@ PathWise-master
     ```
     The backend will be running at `http://127.0.0.1:8000`.
 
-### React Frontend (Recommended)
+### Frontend
 
 1.  Navigate to the `frontend-react` directory:
     ```bash
