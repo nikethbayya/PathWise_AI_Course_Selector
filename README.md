@@ -1,8 +1,13 @@
 # PathWise AI Course Selector
-
+## Introduction
 The PathWise AI Course Selector is a full-stack application that combines a React front-end with a FastAPI backend to provide personalized course recommendations and career guidance. 
-The backend communicates with a Language Model (LLM) pipeline (implemented in FinalCode.py) using LangChain, OpenAI, and other utilities. This project aims to assist students in selecting courses that align with 
-their career goals and preferences.
+This project aims to assist students in selecting courses that align with their career goals and preferences.
+
+* **System Architecture:** The system utilizes CRAG (Corrective Retrieval Augmented Generation) with tools like FastAPI, LangChain, LanceDB, Tavily, OpenAI embeddings, and GPT-4o-mini.
+* **Data Source:** The system retrieves information from a vector storage containing course data from Indiana University’s Luddy School, including graduate programs in Computer Science, Data Science, Information Science, and Library Sciences.
+* **Workflow:** Student queries are converted into embeddings, used to retrieve relevant information, and then evaluated and corrected using web search if necessary. The refined context is then used by GPT-4o-mini to generate personalized course recommendations.
+
+
 
 ## Project Structure
 
@@ -111,22 +116,27 @@ PathWise-master
     Then navigate to `http://localhost:8080` in your browser.
 
 ## Usage
-Open your browser and navigate to http://localhost:3000.
+* Open your browser and navigate to http://localhost:3000.
 
-Use the navigation to access the chatbot page.
+* Use the navigation to access the chatbot page.
 
-Interact with the chatbot by typing your query in the provided field.
+* Interact with the chatbot by typing your query in the provided field.
 
-The chatbot will communicate with the FastAPI endpoint (/api/chat), which in turn calls the LLM pipeline to generate responses. 
+* The chatbot will communicate with the FastAPI endpoint (/api/chat), which in turn calls the LLM pipeline to generate responses. 
 Course recommendations and career guidance will be displayed in the chat interface.
 
 ## Troubleshooting
-### API Communication:
+**API Communication:**
+
 Verify that the FastAPI server is running and available at http://localhost:8000.
 Check that the endpoint paths in your React app (e.g., in ChatBot.js) match your backend endpoints.
 Ensure CORS is properly configured on the backend to allow your React app to communicate.
-### Console Errors:
+
+**Console Errors:**
+
 Open your browser’s console and check for any JavaScript errors.
 Verify that all context values are properly imported and used.
-### Environment Variables:
+
+**Environment Variables:**
+
 Make sure all required API keys are set either in your .env file or as system environment variables.
