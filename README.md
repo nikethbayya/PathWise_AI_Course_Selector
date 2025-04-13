@@ -1,12 +1,13 @@
 # PathWise AI Course Selector
 ## Introduction
 The PathWise AI Course Selector is a full-stack application that combines a React front-end with a FastAPI backend to provide personalized course recommendations and career guidance. 
-This project aims to assist students in selecting courses that align with their career goals and preferences.
+This project aims to assist students in finding the right classes based on their interests and career goals. It works by understanding what a student is looking for and then suggesting courses that align with their future plans.
+
+Using information from Indiana University’s Luddy School, the system provides thoughtful, tailored guidance that supports students in making confident and informed academic decisions.
 
 * **System Architecture:** The system utilizes CRAG (Corrective Retrieval Augmented Generation) with tools like FastAPI, LangChain, LanceDB, Tavily, OpenAI embeddings, and GPT-4o-mini.
 * **Data Source:** The system retrieves information from a vector storage containing course data from Indiana University’s Luddy School, including graduate programs in Computer Science, Data Science, Information Science, and Library Sciences.
 * **Workflow:** Student queries are converted into embeddings, used to retrieve relevant information, and then evaluated and corrected using web search if necessary. The refined context is then used by GPT-4o-mini to generate personalized course recommendations.
-
 
 
 ## Project Structure
